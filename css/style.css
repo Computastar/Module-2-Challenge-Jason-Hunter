@@ -22,6 +22,12 @@ p {
   margin: 0;
 }
 
+/*
+The burger menu was originally greated by Leif Rikshiem
+https: //codepen.io/leifriksheim/pen/QMmXjN
+I modified the colours and sizing to fit the page
+*/
+
 .burger-wrapper {
   cursor: pointer;
 }
@@ -92,6 +98,7 @@ p {
   margin: 20px;
 }
 
+/* Header 1 styling, used for my name */
 h1 {
   font-size: 70px;
   color: #495057;
@@ -100,6 +107,7 @@ h1 {
   z-index: 10000;
 }
 
+/* Header 2 styling, used throughout as section headers */
 h2 {
   font-size: 32px;
   color: #495057;
@@ -112,6 +120,7 @@ body {
   height: 100%;
 }
 
+/* Full about container, full page width flex */
 .aboutMeContainer {
   margin: 15px;
   margin-right: 15px;
@@ -122,6 +131,7 @@ body {
   flex-direction: row;
 }
 
+/* aboutMeItem is each column */
 .aboutMeItem {
   background: white;
   padding: 5px;
@@ -134,36 +144,47 @@ body {
   text-align: justify;
 }
 
+/* aboutMeItem(2) is the actually centered text, which is expaned out */
 .aboutMeItem:nth-of-type(2) {
   width: 40%;
 }
 
+/* Sets properites for screens below 600pc */
 @media screen and (min-width: 600px) {
+
+/* Scales about me text to fit */
   .aboutMeItem:nth-of-type(2) {
-    width: 95%;
+  width: 95%;
   }
 
+/* Scales the container background image to fit */
   .bg {
-    background-size: 10%;
+  background-size: 10%;
   }
 }
 
+/* Sets properites for screens below 800pc */
 @media screen and (max-width: 800px) {
+
+  /* Scales about me text to fit */
   .aboutMeItem:nth-of-type(2) {
     width: 80%;
   }
 
+  /* Aligns and set scale for My Work text */
   .page-section p {
     text-align: center;
     width: 95%;
   }
 
+  /* Resizes my name text*/
   .page-title h1 {
     display: grid;
     grid-template-columns: min-content max-content;
     justify-content: center;
   }
 
+  /* Resizes container background image, needs forcing */
   .bg {
     background-size: cover !important;
     background-position: center !important;
@@ -179,12 +200,14 @@ body {
   margin-bottom: 50px;
 }
 
+/* This is the spanned background image of my face across the container */
 .bg {
   background: url("../images/Bio-Pic.png");
   background-size: 80%;
   background-position: center
 }
 
+/* grid the holds the background image and project divs */
 .container {
   margin-top: 50px;
   margin: 15px;
@@ -195,11 +218,13 @@ body {
   overflow: hidden;
 }
 
+/* When a div is hovered over in the container, opacity is set to solid */
 .container div:hover {
   background-color: #495057;
   opacity: 1;
 }
 
+/* Set the each div in the container, overflow is an issue, needs looking at */
 .container div {
   height: 220px;
   background-size: cover;
@@ -210,10 +235,13 @@ body {
   overflow: visible;
 }
 
+/* Sets the first div in the container to span across to columns */
 .container div:nth-child(1) {
   grid-column: 1 /3;
 }
 
+/* Shows the project class, which shoes the image,scales it by 2 and
+centers it for the first div in the container */
 .container div:nth-child(1):hover .project {
   position: relative;
   transform: scale(2);
@@ -228,6 +256,8 @@ body {
   transition-property: transform, opacity;
 }
 
+/* Sets the tooltip for propeties for div 1
+decided to use tooltips as they moved better wehen sized */
 .container div:nth-child(1) .project .project-tooltip {
   visibility: hidden;
   width: 100px;
@@ -242,10 +272,13 @@ body {
   z-index: 2;
 }
 
+/* hides the project class*/
 .project {
   visibility: hidden;
 }
 
+/* Sets the tooltip for propeties for the rest of the divs
+decided to use tooltips as they moved better wehen sized */
 .container div .project .project-tooltip {
   visibility: hidden;
   width: 100px;
@@ -259,10 +292,14 @@ body {
   z-index: 2;
 }
 
+/* Shoes the tooltips when the div is hovered over */
 .container div .project:hover .project-tooltip {
   visibility: visible;
 }
 
+/* Shows the project class, which shoes the image,scales it by 1.2
+(criteria 1st app should be larger) and
+centers it for the div in the containers */
 .container div:hover .project {
   visibility: visible;
   position: relative;
@@ -282,6 +319,7 @@ body {
   transition-property: transform, opacity;
 }
 
+/* Footer general properties */
 footer {
   background-color: #333;
   color: white;
@@ -299,6 +337,7 @@ footer h2 {
   color: white;
 }
 
+/* send email styling */
 .send-email {
   color: white;
   font-size: 18px;
@@ -306,11 +345,13 @@ footer h2 {
   text-align: center;
 }
 
+/* send email hover styling */
 .send-email:hover {
   color: white;
   opacity: 0.5;
 }
 
+/* send email tooltip */
 .send-email .send-email-tooltip {
   visibility: hidden;
   width: 120px;
@@ -323,10 +364,12 @@ footer h2 {
   position: absolute;
 }
 
+/* shows send email tooltip */
 .send-email:hover .send-email-tooltip {
   visibility: visible;
 }
 
+/* social icons class styling */
 .social-icons {
   list-style: none;
   display: flex;
@@ -335,7 +378,7 @@ footer h2 {
   padding: 0;
 }
 
-
+/* Font awesome styling */
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -346,20 +389,24 @@ footer h2 {
   border-radius: 15%;
 }
 
+/* Font awesome hover styling */
 .fa:hover {
   opacity: 0.5;
 }
 
+/* Font awesome github styling */
 .fa-github {
   background-color: #24292f;
   color: white;
 }
 
+/* Font awesome twitter styling */
 .fa-twitter {
   background: #55ACEE;
   color: white;
 }
 
+/* Font awesome linkedin styling */
 .fa-linkedin {
   background: #007bb5;
   color: white;
