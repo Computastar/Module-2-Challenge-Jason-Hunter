@@ -138,6 +138,28 @@ body {
   width: 40%;
 }
 
+@media screen and (max-width: 800px) {
+  .aboutMeItem:nth-of-type(2) {
+    width: 80%;
+  }
+
+  .page-section p {
+    text-align: center;
+    width: 95%;
+  }
+
+  .page-title h1 {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    justify-content: center;
+  }
+
+  .bg {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+}
+
 .page-section p {
   color: #495057;
   font-size: 18px;
@@ -160,7 +182,6 @@ body {
   display: grid;
   grid-gap: 15px;
   grid-template-columns: 50% 50%;
-  /*repeat(2, 1);  */
   overflow: hidden;
 }
 
