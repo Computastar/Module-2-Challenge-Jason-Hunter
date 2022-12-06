@@ -21,3 +21,25 @@ h6 {
 p {
   margin: 0;
 }
+
+.aboutMeContainer {
+  margin: 15px;
+  margin-right: 15px;
+  display: flex;
+  grid-gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.aboutMeItem {
+  background: white;
+  padding: 5px;
+  width: 20%;
+  height: auto;
+  margin-top: 10px;
+  color: grey;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: justify;
+}
