@@ -1,7 +1,7 @@
 # Module-2-Challenge-Jason-Hunter
 
 Module-2-Challenge-Jason-Hunter is a web site I built to complete Module 2 challenge. The challenge was to build a portfolio page. The purpose is to showcase my skills and talents. I probably went overboard on the design of this page but wanted to push myself and what I've learnt. This became a tussle between perfection at the cost of good enough and finishing within the deadline, I think that may have been one of the points of the challenge. I tried to be light-hearted around the content, a sense of humour can be as good a quality as technical knowledge. I did borrow some code for the burger menu, which I’ve cited in the CSS file. There are a couple of areas which need looking at:
->*	Accessibility
+>*	~~Accessibility~~
 >*	Image sizing - the transformations get cut off due to overflow properties, but not resolved them as of yet
 
 The rest is of the code is from researching, a lot of W3Schools reading, and trial and error, overall, I'm happy with the result and given more time I sure I would have ironed out the wrinkle, but did enjoy the challenge, but need to learn not to over engineer.
